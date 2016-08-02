@@ -1,8 +1,10 @@
 # Курс разработки iOS-приложений
 
+<img style="float: right" src="hero@2x.png">
+
 **Подробнее о курсе:** [moscoding.ru/swift](http://moscoding.ru/swift/)
 
-## Как пользоваться этим [репозиторием](https://ru.wikipedia.org/wiki/Репозиторий)
+## Как пользоваться [репозиторием](https://ru.wikipedia.org/wiki/Репозиторий)
 
 Больше информации по каждому дню курса в разделе [Issues](https://github.com/m4rr/MosCoding/issues).
 
