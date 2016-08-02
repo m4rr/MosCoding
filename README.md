@@ -12,5 +12,3 @@
 
 Замечания и исправления можно присылать, и смотреть в разделе [Pull requests](https://github.com/m4rr/MosCoding/pulls).
 
-[Вики](https://github.com/m4rr/MosCoding/wiki) пока не ведется.
-
