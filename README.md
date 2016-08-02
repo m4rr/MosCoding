@@ -1,6 +1,6 @@
 # Курс разработки iOS-приложений
 
-[](./hero@2x.png =218x)
+<img style="float: right" src="hero@2x.png" width="218">
 
 **Подробнее о курсе:** [moscoding.ru/swift](http://moscoding.ru/swift/)
 
