@@ -1,8 +1,8 @@
 # Курс разработки iOS-приложений
 
-<img style="float: right" src="hero@2x.png" width="218">
-
 **Подробнее о курсе:** [moscoding.ru/swift](http://moscoding.ru/swift/)
+
+<img style="float: right" src="hero@2x.png" width="218">
 
 ## Как пользоваться [репозиторием](https://ru.wikipedia.org/wiki/Репозиторий)
 
