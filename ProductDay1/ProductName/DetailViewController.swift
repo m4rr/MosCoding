@@ -10,27 +10,41 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+  var city: (cityName: String, temp: Int, pressure: Int)?
+
   @IBOutlet weak var nameLabel: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+  @IBOutlet weak var pressureLabel: UILabel!
+
+  @IBAction func buttonDidTap(sender: AnyObject) {
+    if city?.temp < 10 {
+      view.backgroundColor = UIColor.blueColor()
+    } else {
+      view.backgroundColor = UIColor.yellowColor()
     }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    /*
-    // MARK: - Navigation
+    nameLabel.text = city?.cityName
+    pressureLabel.text = "\(city?.pressure)"
+  }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+
+
+  /*
+   // MARK: - Navigation
+
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   // Get the new view controller using segue.destinationViewController.
+   // Pass the selected object to the new view controller.
+   }
+   */
 
 }

@@ -128,6 +128,9 @@
                                             <constraint firstAttribute="height" constant="40" id="xKS-fD-gi0"/>
                                         </constraints>
                                         <state key="normal" title="Покрасить"/>
+                                        <connections>
+                                            <action selector="buttonDidTap:" destination="hx1-oL-tQz" eventType="touchUpInside" id="ord-YH-fF0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -141,6 +144,7 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="q0F-MA-4vf" id="GW6-6o-AQ1"/>
+                        <outlet property="pressureLabel" destination="Sxz-m5-bUu" id="tVO-NT-Lsb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nE4-5H-ZJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
