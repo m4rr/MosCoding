@@ -28,7 +28,11 @@ class DetailViewController: UIViewController {
     super.viewDidLoad()
 
     nameLabel.text = city?.cityName
-    pressureLabel.text = "\(city?.pressure)"
+
+    if let pressure = city?.pressure {
+      pressureLabel.text = "\(pressure)"
+
+    }
   }
 
   override func didReceiveMemoryWarning() {

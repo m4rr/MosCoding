@@ -50,6 +50,25 @@ class ViewController: UIViewController {
     presentViewController(alert, animated: true, completion: nil)
   }
 
+
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    // Получаем значение destination из segue
+    if let detailVC = segue.destinationViewController as? DetailViewController {
+
+      // Получаем indexPath выделенной ячейки
+      if let selectedIndexPath = tableView.indexPathForSelectedRow {
+
+        // Получаем из коллекции cities информацию относящуюся к выделенной ячейке
+        let city = cities[selectedIndexPath.row]
+
+        detailVC.city = city
+      }
+    }
+
+
+  }
+
 }
 
 extension ViewController: UITableViewDataSource {
