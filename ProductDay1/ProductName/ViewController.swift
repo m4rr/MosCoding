@@ -15,7 +15,9 @@ class ViewController: UIViewController {
   var cities: [(cityName: String, temp: Int, pressure: Int)] = [
 
     ("Moscow", 20, 751),
-    ("San Francisco", 30, 752),
+    ("London", 30, 752),
+    ("Berlin", 0, 752),
+    ("Rio", 50, 750),
 
   ]
 

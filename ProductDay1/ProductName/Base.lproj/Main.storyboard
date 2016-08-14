@@ -143,6 +143,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="vYn-bQ-5Kf" id="b2k-1R-bOz"/>
                         <outlet property="nameLabel" destination="q0F-MA-4vf" id="GW6-6o-AQ1"/>
                         <outlet property="pressureLabel" destination="Sxz-m5-bUu" id="tVO-NT-Lsb"/>
                     </connections>

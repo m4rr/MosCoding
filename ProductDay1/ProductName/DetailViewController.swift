@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
   var city: (cityName: String, temp: Int, pressure: Int)?
 
+  @IBOutlet weak var imageView: UIImageView!
+
   @IBOutlet weak var nameLabel: UILabel!
 
   @IBOutlet weak var pressureLabel: UILabel!
@@ -31,8 +33,19 @@ class DetailViewController: UIViewController {
 
     if let pressure = city?.pressure {
       pressureLabel.text = "\(pressure)"
-
     }
+
+    if let URL = NSURL(string: "https://raw.githubusercontent.com/m4rr/MosCoding/master/images/\(city?.cityName ?? "mickey").jpg") {
+
+      if let downloadedData = NSData(contentsOfURL: URL) {
+
+        imageView.image = UIImage(data: downloadedData)
+      }
+    }
+
+
+
+    
   }
 
   override func didReceiveMemoryWarning() {
