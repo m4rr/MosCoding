@@ -12,13 +12,10 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
 
-  var cities = [
+  var cities: [(cityName: String, temp: Int, pressure: Int)] = [
 
-    ("Moscow", 20),
-    ("Berlin", 25),
-    ("San Francisco", 30),
-    ("Rio", 40),
-    ("", 100),
+    ("Moscow", 20, 751),
+    ("San Francisco", 30, 752),
 
   ]
 
@@ -40,7 +37,7 @@ class ViewController: UIViewController {
     let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction) in
       let cityName = alert.textFields?.first?.text
 
-      self.cities.append((cityName!, 20))
+      self.cities.append((cityName!, 20, 753))
       self.tableView.reloadData()
     })
 
@@ -67,17 +64,19 @@ extension ViewController: UITableViewDataSource {
 
     let city = cities[indexPath.row]
 
-    let cityName = city.0
+    let cityName = city.cityName
 
     if cityName == "" {
       myCell.textLabel?.text = "no city name"
       myCell.backgroundColor = nil
       myCell.imageView?.image = nil
     } else {
-      myCell.textLabel?.text = cityName
+      myCell.textLabel?.text = "\(cityName), давление: \(city.pressure)"
+
+      // String(format: "%@, давление: %d", cityName, city.pressure)
     }
 
-    myCell.detailTextLabel?.text = String(city.1) + "°"
+    myCell.detailTextLabel?.text = String(city.temp) + "°"
 
     return myCell
   }
