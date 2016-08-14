@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     ("Berlin", 25),
     ("San Francisco", 30),
     ("Rio", 40),
+    ("", 100),
 
   ]
 
@@ -35,13 +36,20 @@ class ViewController: UIViewController {
 
     alert.addTextFieldWithConfigurationHandler { (textField) in }
 
-    alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action: UIAlertAction) in
+
+    let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction) in
       let cityName = alert.textFields?.first?.text
 
       self.cities.append((cityName!, 20))
       self.tableView.reloadData()
-    }))
-    
+    })
+
+    let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+
+
+    alert.addAction(okAction)
+    alert.addAction(cancelAction)
+
     presentViewController(alert, animated: true, completion: nil)
   }
 
@@ -59,13 +67,19 @@ extension ViewController: UITableViewDataSource {
 
     let city = cities[indexPath.row]
 
-    myCell.textLabel?.text = city.0
+    let cityName = city.0
+
+    if cityName == "" {
+      myCell.textLabel?.text = "no city name"
+      myCell.backgroundColor = nil
+      myCell.imageView?.image = nil
+    } else {
+      myCell.textLabel?.text = cityName
+    }
+
     myCell.detailTextLabel?.text = String(city.1) + "°"
 
     return myCell
   }
 
 }
-
-
-
