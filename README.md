@@ -12,6 +12,6 @@
 
 Замечания и исправления можно присылать, и смотреть в разделе [Pull requests](https://github.com/m4rr/MosCoding/pulls).
 
-Скачать: [ссылка](https://github.com/m4rr/MosCoding/archive/master.zip) или вот так:
+Скачать этот репозиторий [по ссылке](https://github.com/m4rr/MosCoding/archive/master.zip) или вот так:
 
 <img src="how-to-download@2x.png" width="400">
