@@ -87,34 +87,31 @@ extension ViewController: UIPickerViewDelegate {
 
   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
 
-//    dateLabel.hidden = !dateLabel.hidden
-
-
-    UIView.animateWithDuration(3) { 
-      self.dateLabel.alpha = 0
-    }
-
-
+    /// получаем объект `TempUnit` из списка `tCelsius` по номеру `row`
     let unitCelsius = tCelsius[row]
+
+    /// получаем значение температуры из объекта типа `TempUnit`
     let degree = unitCelsius.temp
+
+    /// конвертируем значение температуы °C → °F
     let degreeInF = calc.convert(celsius: degree)
 
+    /// создаем объект `TempUnit` со сконвертированным значением температуры
     let unitFahr = TempUnit(temp: degreeInF)
+
+    /// получаем от объекта `TempUnit` отформатированную строку
     let textValue = unitFahr.prettyRound()
 
+    /// ставим отформатированную строку в `label.text`
     label.text = textValue + " °F"
 
     let defaults = NSUserDefaults.standardUserDefaults()
-    defaults.setInteger(row, forKey: "selectedRow")
 
+    defaults.setInteger(row, forKey: "selectedRow")
     defaults.setObject(textValue, forKey: "textValue")
 
-
-
     let dateNow = NSDate()
-
     dateLabel.text = "\(dateNow)"
-
   }
 
 }
