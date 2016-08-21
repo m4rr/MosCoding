@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trr-JZ-8qg">
+                                <rect key="frame" x="265" y="68" width="70" height="30"/>
+                                <state key="normal" title="Open Link"/>
+                                <connections>
+                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFX-1h-GRE"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtx-1M-E3w">
+                                <rect key="frame" x="20" y="106" width="560" height="494"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Rhy-DW-p00"/>
+                                </connections>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOP-eY-x4V">
+                                <rect key="frame" x="215" y="68" width="30" height="30"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="backButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxD-oc-eQp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko1-gA-Jv3">
+                                <rect key="frame" x="355" y="68" width="30" height="30"/>
+                                <state key="normal" title="&gt;"/>
+                                <connections>
+                                    <action selector="forwardButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riD-s0-UML"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://yandex.ru" borderStyle="roundedRect" placeholder="Пожалуйста, введите адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-9i-yv6">
+                                <rect key="frame" x="40" y="30" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Trr-JZ-8qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5cU-m1-TKX"/>
+                            <constraint firstItem="Trr-JZ-8qg" firstAttribute="leading" secondItem="nOP-eY-x4V" secondAttribute="trailing" constant="20" id="8wi-im-Xu4"/>
+                            <constraint firstItem="Trr-JZ-8qg" firstAttribute="top" secondItem="hN9-9i-yv6" secondAttribute="bottom" constant="8" id="EOP-Hz-X2I"/>
+                            <constraint firstItem="Ko1-gA-Jv3" firstAttribute="leading" secondItem="Trr-JZ-8qg" secondAttribute="trailing" constant="20" id="O9g-rc-mfS"/>
+                            <constraint firstItem="Ko1-gA-Jv3" firstAttribute="centerY" secondItem="nOP-eY-x4V" secondAttribute="centerY" id="TgO-aY-hjM"/>
+                            <constraint firstItem="Vtx-1M-E3w" firstAttribute="top" secondItem="Trr-JZ-8qg" secondAttribute="bottom" constant="8" id="U1H-bQ-Xue"/>
+                            <constraint firstItem="Trr-JZ-8qg" firstAttribute="centerY" secondItem="nOP-eY-x4V" secondAttribute="centerY" id="Vt9-3R-anp"/>
+                            <constraint firstItem="hN9-9i-yv6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Z1Z-OL-Olt"/>
+                            <constraint firstItem="Vtx-1M-E3w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c0f-wt-b2A"/>
+                            <constraint firstItem="hN9-9i-yv6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mkI-bb-YIW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vtx-1M-E3w" secondAttribute="bottom" id="n4d-X7-eYK"/>
+                            <constraint firstItem="hN9-9i-yv6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="v02-EG-avY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vtx-1M-E3w" secondAttribute="trailing" id="yOs-Wc-Qd6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="nOP-eY-x4V" id="2vW-0U-06n"/>
+                        <outlet property="forwardButton" destination="Ko1-gA-Jv3" id="zdg-lN-cdR"/>
+                        <outlet property="textField" destination="hN9-9i-yv6" id="icv-4X-0lE"/>
+                        <outlet property="webView" destination="Vtx-1M-E3w" id="X0p-QY-MJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
