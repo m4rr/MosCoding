@@ -1,10 +1,14 @@
 [
   {
     "name": "Том",
-    "photo": "https://raw.githubusercontent.com/m4rr/MosCoding/master/data/tom.png"
+    "photo": "https://raw.githubusercontent.com/m4rr/MosCoding/master/data/tom.png",
+    "bio": "Том является типичным домашним котом — любит долго спать, вкусно есть, проявляет интерес к знакомым кошечкам. Своей прямой обязанностью — ловлей мышей — занимается редко и неохотно, чаще всего после того, как хозяйка его заругает за лень.",
+    "age": 8,
   },
   {
     "name": "Джерри",
-    "photo": "https://raw.githubusercontent.com/m4rr/MosCoding/master/data/jerry.jpg"
+    "photo": "https://raw.githubusercontent.com/m4rr/MosCoding/master/data/jerry.jpg",
+    "bio": "У Джерри есть сходство с Томом тем, что они оба любят вкусно поесть, проявлять интерес к знакомым кошечкам. Мышонок любит есть сыр, лазить по холодильникам, также он любитель отдыхать и спать. Чаще любит поиздеваться над Томом, неважно, ловит Том его или занят своими делами.",
+    "age": 3
   }
 ]
