@@ -11,6 +11,8 @@ import Alamofire
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var label: UILabel!
+  
 //  var simpleObject: Downloadable?
 
   var index = 0 {
@@ -21,11 +23,9 @@ class ViewController: UIViewController {
     }
 
     didSet(oldValue) {
-      print("index did set from: \(oldValue) → to: \(index)")
-      downloadViaWrapper()
-
-
-      tableView.reloadData()
+//      print("index did set from: \(oldValue) → to: \(index)")
+//      downloadViaWrapper()
+//      tableView.reloadData()
     }
   }
 
@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     index += 1
     index += 1
 
+    downloadViaWrapper()
+
   }
 
   func downloadViaWrapper() {
@@ -59,12 +61,18 @@ class ViewController: UIViewController {
 
     Alamofire
 //      .upload
+
+//      .request(<#T##method: Method##Method#>, <#T##URLString: URLStringConvertible##URLStringConvertible#>, parameters: <#T##[String : AnyObject]?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##[String : String]?#>)
+
       .request(.GET, urlStr)
+
+
 
       .responseJSON { (response: Response<AnyObject, NSError>) in
 
+//        response.response
 
-        response.response
+//        let JSON2 = response.result.value as? [[String: AnyObject]]
 
         if let JSON = response.result.value as? [[String: AnyObject]] {
           //print("JSON: \(JSON)")
@@ -72,12 +80,27 @@ class ViewController: UIViewController {
 
           print(self.index, "-", NSDate())
 
+          var resultText = ""
 
           if let firstObject = JSON.first {
+
             for (key, value) in firstObject {
-              //print(key, ": ", value)
+
+              resultText += "\(key): \(value)\n"
             }
+
           }
+
+
+          dispatch_async(dispatch_get_main_queue(), {
+          })
+
+          dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            self.label.text = resultText
+
+          })
+
+          print(NSDate())
 
         }
     }
