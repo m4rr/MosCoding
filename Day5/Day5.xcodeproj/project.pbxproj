@@ -15,6 +15,20 @@
 		03715EB91D71775900CA8568 /* Day5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03715EB81D71775900CA8568 /* Day5Tests.swift */; };
 		03715EC41D7178B200CA8568 /* Downloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03715EC31D7178B200CA8568 /* Downloadable.swift */; };
 		03715EC61D717A9F00CA8568 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03715EC51D717A9F00CA8568 /* Downloader.swift */; };
+		037275DC1D72E8A6001319C7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037275DB1D72E8A6001319C7 /* NotificationCenter.framework */; };
+		037275DF1D72E8A6001319C7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037275DE1D72E8A6001319C7 /* TodayViewController.swift */; };
+		037275E21D72E8A6001319C7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037275E01D72E8A6001319C7 /* MainInterface.storyboard */; };
+		037275E61D72E8A6001319C7 /* Day5Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 037275DA1D72E8A6001319C7 /* Day5Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03FA5B0F1D72D47E000C9764 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FA5B0D1D72D47E000C9764 /* Interface.storyboard */; };
+		03FA5B111D72D47E000C9764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FA5B101D72D47E000C9764 /* Assets.xcassets */; };
+		03FA5B181D72D47E000C9764 /* Day5Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03FA5B171D72D47E000C9764 /* Day5Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03FA5B1F1D72D47E000C9764 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA5B1E1D72D47E000C9764 /* InterfaceController.swift */; };
+		03FA5B211D72D47E000C9764 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA5B201D72D47E000C9764 /* ExtensionDelegate.swift */; };
+		03FA5B231D72D47E000C9764 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA5B221D72D47E000C9764 /* NotificationController.swift */; };
+		03FA5B251D72D47E000C9764 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA5B241D72D47E000C9764 /* GlanceController.swift */; };
+		03FA5B271D72D47E000C9764 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA5B261D72D47E000C9764 /* ComplicationController.swift */; };
+		03FA5B291D72D47E000C9764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FA5B281D72D47E000C9764 /* Assets.xcassets */; };
+		03FA5B2D1D72D47E000C9764 /* Day5Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FA5B0B1D72D47E000C9764 /* Day5Watch.app */; };
 		4575B27E7CB765FC6E0933AB /* Pods_Day5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B247BFDDBCB7EB1305AF3A9 /* Pods_Day5Tests.framework */; };
 		782273ADC84C7558DDB3BAC5 /* Pods_Day5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D560699FE939FE7F93AD7B /* Pods_Day5.framework */; };
 /* End PBXBuildFile section */
@@ -27,7 +41,64 @@
 			remoteGlobalIDString = 03715E9F1D71775900CA8568;
 			remoteInfo = Day5;
 		};
+		037275E41D72E8A6001319C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03715E981D71775900CA8568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037275D91D72E8A6001319C7;
+			remoteInfo = Day5Today;
+		};
+		03FA5B191D72D47E000C9764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03715E981D71775900CA8568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FA5B161D72D47E000C9764;
+			remoteInfo = "Day5Watch Extension";
+		};
+		03FA5B2B1D72D47E000C9764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03715E981D71775900CA8568 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FA5B0A1D72D47E000C9764;
+			remoteInfo = Day5Watch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		037275EA1D72E8A6001319C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				037275E61D72E8A6001319C7 /* Day5Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B331D72D47E000C9764 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03FA5B181D72D47E000C9764 /* Day5Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B351D72D47E000C9764 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				03FA5B2D1D72D47E000C9764 /* Day5Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03715EA01D71775900CA8568 /* Day5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day5.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +113,24 @@
 		03715EBA1D71775900CA8568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03715EC31D7178B200CA8568 /* Downloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloadable.swift; sourceTree = "<group>"; };
 		03715EC51D717A9F00CA8568 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		037275DA1D72E8A6001319C7 /* Day5Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Day5Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		037275DB1D72E8A6001319C7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		037275DE1D72E8A6001319C7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		037275E11D72E8A6001319C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		037275E31D72E8A6001319C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FA5B0B1D72D47E000C9764 /* Day5Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day5Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FA5B0E1D72D47E000C9764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		03FA5B101D72D47E000C9764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03FA5B121D72D47E000C9764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FA5B171D72D47E000C9764 /* Day5Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Day5Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FA5B1D1D72D47E000C9764 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		03FA5B1E1D72D47E000C9764 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		03FA5B201D72D47E000C9764 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		03FA5B221D72D47E000C9764 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		03FA5B241D72D47E000C9764 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		03FA5B261D72D47E000C9764 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		03FA5B281D72D47E000C9764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03FA5B2A1D72D47E000C9764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38B434B1D8FE8313F21EA94B /* Pods-Day5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day5.release.xcconfig"; path = "Pods/Target Support Files/Pods-Day5/Pods-Day5.release.xcconfig"; sourceTree = "<group>"; };
 		3D2D8E6E280CD6CB3D421C62 /* Pods-Day5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Day5Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Day5Tests/Pods-Day5Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D560699FE939FE7F93AD7B /* Pods_Day5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Day5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +156,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		037275D71D72E8A6001319C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037275DC1D72E8A6001319C7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B141D72D47E000C9764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +179,9 @@
 			children = (
 				03715EA21D71775900CA8568 /* Day5 */,
 				03715EB71D71775900CA8568 /* Day5Tests */,
+				03FA5B0C1D72D47E000C9764 /* Day5Watch */,
+				03FA5B1B1D72D47E000C9764 /* Day5Watch Extension */,
+				037275DD1D72E8A6001319C7 /* Day5Today */,
 				03715EA11D71775900CA8568 /* Products */,
 				3B8BEF4A2FF3EA938831B241 /* Pods */,
 				D2EA997AF8170BD92C22986D /* Frameworks */,
@@ -86,6 +193,9 @@
 			children = (
 				03715EA01D71775900CA8568 /* Day5.app */,
 				03715EB41D71775900CA8568 /* Day5Tests.xctest */,
+				03FA5B0B1D72D47E000C9764 /* Day5Watch.app */,
+				03FA5B171D72D47E000C9764 /* Day5Watch Extension.appex */,
+				037275DA1D72E8A6001319C7 /* Day5Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +224,49 @@
 			path = Day5Tests;
 			sourceTree = "<group>";
 		};
+		037275DD1D72E8A6001319C7 /* Day5Today */ = {
+			isa = PBXGroup;
+			children = (
+				037275DE1D72E8A6001319C7 /* TodayViewController.swift */,
+				037275E01D72E8A6001319C7 /* MainInterface.storyboard */,
+				037275E31D72E8A6001319C7 /* Info.plist */,
+			);
+			path = Day5Today;
+			sourceTree = "<group>";
+		};
+		03FA5B0C1D72D47E000C9764 /* Day5Watch */ = {
+			isa = PBXGroup;
+			children = (
+				03FA5B0D1D72D47E000C9764 /* Interface.storyboard */,
+				03FA5B101D72D47E000C9764 /* Assets.xcassets */,
+				03FA5B121D72D47E000C9764 /* Info.plist */,
+			);
+			path = Day5Watch;
+			sourceTree = "<group>";
+		};
+		03FA5B1B1D72D47E000C9764 /* Day5Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03FA5B1E1D72D47E000C9764 /* InterfaceController.swift */,
+				03FA5B201D72D47E000C9764 /* ExtensionDelegate.swift */,
+				03FA5B221D72D47E000C9764 /* NotificationController.swift */,
+				03FA5B241D72D47E000C9764 /* GlanceController.swift */,
+				03FA5B261D72D47E000C9764 /* ComplicationController.swift */,
+				03FA5B281D72D47E000C9764 /* Assets.xcassets */,
+				03FA5B2A1D72D47E000C9764 /* Info.plist */,
+				03FA5B1C1D72D47E000C9764 /* Supporting Files */,
+			);
+			path = "Day5Watch Extension";
+			sourceTree = "<group>";
+		};
+		03FA5B1C1D72D47E000C9764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03FA5B1D1D72D47E000C9764 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3B8BEF4A2FF3EA938831B241 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +283,7 @@
 			children = (
 				40D560699FE939FE7F93AD7B /* Pods_Day5.framework */,
 				8B247BFDDBCB7EB1305AF3A9 /* Pods_Day5Tests.framework */,
+				037275DB1D72E8A6001319C7 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,10 +301,14 @@
 				03715E9E1D71775900CA8568 /* Resources */,
 				B9434B9197D306D06B6D6FF9 /* [CP] Embed Pods Frameworks */,
 				088010DD9131022CFDD476C3 /* [CP] Copy Pods Resources */,
+				03FA5B351D72D47E000C9764 /* Embed Watch Content */,
+				037275EA1D72E8A6001319C7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03FA5B2C1D72D47E000C9764 /* PBXTargetDependency */,
+				037275E51D72E8A6001319C7 /* PBXTargetDependency */,
 			);
 			name = Day5;
 			productName = Day5;
@@ -178,6 +336,57 @@
 			productReference = 03715EB41D71775900CA8568 /* Day5Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		037275D91D72E8A6001319C7 /* Day5Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 037275E91D72E8A6001319C7 /* Build configuration list for PBXNativeTarget "Day5Today" */;
+			buildPhases = (
+				037275D61D72E8A6001319C7 /* Sources */,
+				037275D71D72E8A6001319C7 /* Frameworks */,
+				037275D81D72E8A6001319C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day5Today;
+			productName = Day5Today;
+			productReference = 037275DA1D72E8A6001319C7 /* Day5Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		03FA5B0A1D72D47E000C9764 /* Day5Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FA5B341D72D47E000C9764 /* Build configuration list for PBXNativeTarget "Day5Watch" */;
+			buildPhases = (
+				03FA5B091D72D47E000C9764 /* Resources */,
+				03FA5B331D72D47E000C9764 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FA5B1A1D72D47E000C9764 /* PBXTargetDependency */,
+			);
+			name = Day5Watch;
+			productName = Day5Watch;
+			productReference = 03FA5B0B1D72D47E000C9764 /* Day5Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		03FA5B161D72D47E000C9764 /* Day5Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FA5B321D72D47E000C9764 /* Build configuration list for PBXNativeTarget "Day5Watch Extension" */;
+			buildPhases = (
+				03FA5B131D72D47E000C9764 /* Sources */,
+				03FA5B141D72D47E000C9764 /* Frameworks */,
+				03FA5B151D72D47E000C9764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Day5Watch Extension";
+			productName = "Day5Watch Extension";
+			productReference = 03FA5B171D72D47E000C9764 /* Day5Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +403,15 @@
 					03715EB31D71775900CA8568 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 03715E9F1D71775900CA8568;
+					};
+					037275D91D72E8A6001319C7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					03FA5B0A1D72D47E000C9764 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					03FA5B161D72D47E000C9764 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -212,6 +430,9 @@
 			targets = (
 				03715E9F1D71775900CA8568 /* Day5 */,
 				03715EB31D71775900CA8568 /* Day5Tests */,
+				03FA5B0A1D72D47E000C9764 /* Day5Watch */,
+				03FA5B161D72D47E000C9764 /* Day5Watch Extension */,
+				037275D91D72E8A6001319C7 /* Day5Today */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +452,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		037275D81D72E8A6001319C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037275E21D72E8A6001319C7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B091D72D47E000C9764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FA5B111D72D47E000C9764 /* Assets.xcassets in Resources */,
+				03FA5B0F1D72D47E000C9764 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B151D72D47E000C9764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FA5B291D72D47E000C9764 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +595,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		037275D61D72E8A6001319C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037275DF1D72E8A6001319C7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FA5B131D72D47E000C9764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FA5B231D72D47E000C9764 /* NotificationController.swift in Sources */,
+				03FA5B211D72D47E000C9764 /* ExtensionDelegate.swift in Sources */,
+				03FA5B271D72D47E000C9764 /* ComplicationController.swift in Sources */,
+				03FA5B1F1D72D47E000C9764 /* InterfaceController.swift in Sources */,
+				03FA5B251D72D47E000C9764 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -356,6 +622,21 @@
 			isa = PBXTargetDependency;
 			target = 03715E9F1D71775900CA8568 /* Day5 */;
 			targetProxy = 03715EB51D71775900CA8568 /* PBXContainerItemProxy */;
+		};
+		037275E51D72E8A6001319C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 037275D91D72E8A6001319C7 /* Day5Today */;
+			targetProxy = 037275E41D72E8A6001319C7 /* PBXContainerItemProxy */;
+		};
+		03FA5B1A1D72D47E000C9764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FA5B161D72D47E000C9764 /* Day5Watch Extension */;
+			targetProxy = 03FA5B191D72D47E000C9764 /* PBXContainerItemProxy */;
+		};
+		03FA5B2C1D72D47E000C9764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FA5B0A1D72D47E000C9764 /* Day5Watch */;
+			targetProxy = 03FA5B2B1D72D47E000C9764 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -374,6 +655,22 @@
 				03715EAD1D71775900CA8568 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		037275E01D72E8A6001319C7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				037275E11D72E8A6001319C7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		03FA5B0D1D72D47E000C9764 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FA5B0E1D72D47E000C9764 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -467,6 +764,7 @@
 			baseConfigurationReference = D496364864F028AB51B1BE65 /* Pods-Day5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Day5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5;
@@ -479,6 +777,7 @@
 			baseConfigurationReference = 38B434B1D8FE8313F21EA94B /* Pods-Day5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Day5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5;
@@ -512,6 +811,90 @@
 			};
 			name = Release;
 		};
+		037275E71D72E8A6001319C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Day5Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.Day5Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		037275E81D72E8A6001319C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Day5Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.Day5Today;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		03FA5B2E1D72D47E000C9764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Day5Watch_Extension;
+				INFOPLIST_FILE = Day5Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		03FA5B2F1D72D47E000C9764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Day5Watch_Extension;
+				INFOPLIST_FILE = Day5Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		03FA5B301D72D47E000C9764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Day5Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		03FA5B311D72D47E000C9764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Day5Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Day5.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -538,6 +921,32 @@
 			buildConfigurations = (
 				03715EC11D71775900CA8568 /* Debug */,
 				03715EC21D71775900CA8568 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		037275E91D72E8A6001319C7 /* Build configuration list for PBXNativeTarget "Day5Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037275E71D72E8A6001319C7 /* Debug */,
+				037275E81D72E8A6001319C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03FA5B321D72D47E000C9764 /* Build configuration list for PBXNativeTarget "Day5Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FA5B301D72D47E000C9764 /* Debug */,
+				03FA5B311D72D47E000C9764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FA5B341D72D47E000C9764 /* Build configuration list for PBXNativeTarget "Day5Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FA5B2E1D72D47E000C9764 /* Debug */,
+				03FA5B2F1D72D47E000C9764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

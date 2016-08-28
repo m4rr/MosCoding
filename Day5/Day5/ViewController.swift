@@ -62,11 +62,7 @@ class ViewController: UIViewController {
     Alamofire
 //      .upload
 
-//      .request(<#T##method: Method##Method#>, <#T##URLString: URLStringConvertible##URLStringConvertible#>, parameters: <#T##[String : AnyObject]?#>, encoding: <#T##ParameterEncoding#>, headers: <#T##[String : String]?#>)
-
       .request(.GET, urlStr)
-
-
 
       .responseJSON { (response: Response<AnyObject, NSError>) in
 
@@ -93,14 +89,18 @@ class ViewController: UIViewController {
 
 
           dispatch_async(dispatch_get_main_queue(), {
+            self.label.text = resultText
           })
 
           dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            self.label.text = resultText
 
           })
 
           print(NSDate())
+
+    NSNotificationCenter.defaultCenter()
+      .postNotificationName("downloadCompleteNotification", object: nil)
+
 
         }
     }
