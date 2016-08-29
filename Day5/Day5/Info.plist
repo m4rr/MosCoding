@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+
+  <key>Fabric</key>
+  <dict>
+    <key>APIKey</key>
+    <string>5c1e7c54eb7ad5878374956ea5e0bbb734cf503a</string>
+  </dict>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

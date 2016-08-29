@@ -8,6 +8,9 @@ target 'Day5' do
   # Pods for Day5
   pod 'Alamofire', '~> 3.4'
 
+  pod 'Fabric'
+  pod 'Answers'
+
   target 'Day5Tests' do
     inherit! :search_paths
     # Pods for testing

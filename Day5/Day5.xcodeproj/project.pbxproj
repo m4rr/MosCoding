@@ -171,6 +171,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		297857575A427CDDDFC4638C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -303,6 +310,7 @@
 				088010DD9131022CFDD476C3 /* [CP] Copy Pods Resources */,
 				03FA5B351D72D47E000C9764 /* Embed Watch Content */,
 				037275EA1D72E8A6001319C7 /* Embed App Extensions */,
+				0333B58F1D7301FC0027BA6D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -359,6 +367,7 @@
 			buildPhases = (
 				03FA5B091D72D47E000C9764 /* Resources */,
 				03FA5B331D72D47E000C9764 /* Embed App Extensions */,
+				297857575A427CDDDFC4638C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -483,6 +492,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0333B58F1D7301FC0027BA6D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 5c1e7c54eb7ad5878374956ea5e0bbb734cf503a 53601a534772948b6911840d4b25eee31d908d6d365f5733e527aa315595dd2e";
+		};
 		088010DD9131022CFDD476C3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -932,6 +954,7 @@
 				037275E81D72E8A6001319C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03FA5B321D72D47E000C9764 /* Build configuration list for PBXNativeTarget "Day5Watch Extension" */ = {
 			isa = XCConfigurationList;
