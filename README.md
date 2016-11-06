@@ -2,7 +2,7 @@
 
 Подробнее о курсе: [moscoding.ru/swift](http://moscoding.ru/swift/)
 
-<img src="hero@2x.png" width="218">
+<img src="hero@2x.png" width="218"> <img src="hero-november@2x.png" width="218">
 
 ## Как пользоваться [репозиторием](https://ru.wikipedia.org/wiki/Репозиторий)
 
