@@ -1,6 +1,0 @@
-framework module Pods_Day5Tests {
-  umbrella header "Pods-Day5Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
