@@ -14,10 +14,14 @@
 * [Документация UILabel](https://developer.apple.com/reference/uikit/uilabel)
 * [Документация UIPickerView](https://developer.apple.com/reference/uikit/uipickerview)
 * [Документация по NSUserDefaults](https://developer.apple.com/reference/foundation/nsuserdefaults)
+* [**Руководство по проектированию интерфейсов iOS**](https://developer.apple.com/ios/human-interface-guidelines/)
+* [Документация NSDate](https://developer.apple.com/reference/foundation/nsdate)
+* [Наследование](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Inheritance.html)
 
 **Книги**
 
-- [The Big Nerd Ranch Guide](https://www.bignerdranch.com/we-write/ios-programming/)
+* [The Swift Programming Language](https://itunes.apple.com/us/book/swift-programming-language/id881256329?mt=11)
+* [The Big Nerd Ranch Guide](https://www.bignerdranch.com/we-write/ios-programming/)
 
 **Статьи**
 
