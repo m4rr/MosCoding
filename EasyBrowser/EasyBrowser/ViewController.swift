@@ -47,6 +47,7 @@ class ViewController: UIViewController {
   @IBAction func backButtonDidTap(_ sender: Any) {
     // нажатие кнопки "назад"
     webView.goBack()
+
   }
 
 }
