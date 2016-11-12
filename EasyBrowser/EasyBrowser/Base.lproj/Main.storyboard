@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMV-S3-eRR">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" calendarEvent="YES" flightNumber="YES"/>
+                            </webView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0oE-wZ-i3L">
+                                <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z0-qp-QdH">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
+                                        <state key="normal" title="Стоп"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oth-ht-lKh">
+                                        <rect key="frame" x="62.5" y="0.0" width="45" height="30"/>
+                                        <state key="normal" title="Назад"/>
+                                        <connections>
+                                            <action selector="backButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ApL-AZ-gSG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTv-FD-u7e">
+                                        <rect key="frame" x="134.5" y="0.0" width="62" height="30"/>
+                                        <state key="normal" title="Открыть"/>
+                                        <connections>
+                                            <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPV-Y5-kZM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-mC-hCn">
+                                        <rect key="frame" x="224" y="0.0" width="54" height="30"/>
+                                        <state key="normal" title="Вперед"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-m3-S3N">
+                                        <rect key="frame" x="305" y="0.0" width="70" height="30"/>
+                                        <state key="normal" title="Обновить"/>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VMV-S3-eRR" firstAttribute="top" secondItem="0oE-wZ-i3L" secondAttribute="bottom" id="5ia-Uv-GCO"/>
+                            <constraint firstAttribute="trailing" secondItem="0oE-wZ-i3L" secondAttribute="trailing" id="ExA-Ry-9hc"/>
+                            <constraint firstItem="0oE-wZ-i3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gt4-3a-rKb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VMV-S3-eRR" secondAttribute="bottom" id="L2f-Gl-tXn"/>
+                            <constraint firstItem="VMV-S3-eRR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jbI-mv-VRR"/>
+                            <constraint firstAttribute="trailing" secondItem="VMV-S3-eRR" secondAttribute="trailing" id="oLC-We-5Pl"/>
+                            <constraint firstItem="0oE-wZ-i3L" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qRP-Kl-R0K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="VMV-S3-eRR" id="n26-i2-PQ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
