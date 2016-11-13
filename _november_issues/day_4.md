@@ -1,8 +1,13 @@
 **Видеозаписи**
 
-- []()
-- []()
-- []()
+- [Булева логика, анонимные функции](https://youtu.be/a-BQlt3iW28)
+- [Запросы в интернет, парсинг JSON](https://youtu.be/pP5kCuOwRgc)
+- [UITableView](https://youtu.be/zc9E-pIhqrQ)
+
+**Проекты**
+
+- [Playground](https://github.com/m4rr/MosCoding/tree/master/Downloader)
+- [Downloader](https://github.com/m4rr/MosCoding/tree/master/MyPlayground.playground)
 
 **Материалы**
 
