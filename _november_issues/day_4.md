@@ -6,8 +6,8 @@
 
 **Проекты**
 
-- [Playground](https://github.com/m4rr/MosCoding/tree/master/Downloader)
-- [Downloader](https://github.com/m4rr/MosCoding/tree/master/MyPlayground.playground)
+- [Playground](https://github.com/m4rr/MosCoding/tree/master/day4.playground)
+- [Downloader](https://github.com/m4rr/MosCoding/tree/master/Downloader)
 
 **Материалы**
 
