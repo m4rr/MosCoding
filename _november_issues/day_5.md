@@ -17,3 +17,11 @@
 - [Cocoa Controls](https://www.cocoacontrols.com/)
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 - [SFProgressCircle](https://github.com/sfcd/SFProgressCircle)
+
+**Подробности**
+
+Метод для анимации превращения одной UIView в другую:
+`UIView.transition(from:to:)`
+
+Метод для анимации превращения самой UIView (например, изменение текста в UILabel):
+`UIView.transition(with:)`
