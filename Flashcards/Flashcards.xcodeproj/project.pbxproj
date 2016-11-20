@@ -151,7 +151,6 @@
 				TargetAttributes = {
 					035DDC3E1DE07FAF006213FA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = Y5P7AX9UM2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -367,7 +366,7 @@
 			baseConfigurationReference = BF059EA21D5629678A6F8F6B /* Pods-Flashcards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y5P7AX9UM2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Flashcards;
@@ -381,7 +380,7 @@
 			baseConfigurationReference = 28FE6F6932AF9B726724BBB2 /* Pods-Flashcards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Y5P7AX9UM2;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Flashcards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.m4rr.Flashcards;
