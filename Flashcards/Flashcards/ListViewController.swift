@@ -22,16 +22,22 @@ class ListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-//    let refreshControl = UIRefreshControl()
-//    refreshControl.addTarget(self, action: #selector(handleRefresh), for: UIControlEvents.valueChanged)
-//    tableView.refreshControl = refreshControl
+    let rc = UIRefreshControl()
+
+    rc.addTarget(self,
+                 action: #selector(handleRefresh),
+                 for: UIControlEvents.valueChanged)
+
+    tableView.refreshControl = rc
   }
 
   func handleRefresh(sender: UIRefreshControl) {
-    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2_000)) {
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
       sender.endRefreshing()
       self.tableView.reloadData()
     }
+
   }
 
 }
@@ -39,6 +45,15 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    // полная запись
+//    if let d = deck {
+//      return d.numberOfCards
+//    } else {
+//      return 0
+//    }
+
+    // сокращенная запись
     return deck?.numberOfCards ?? 0
   }
 
