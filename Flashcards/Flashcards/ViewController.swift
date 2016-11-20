@@ -55,10 +55,22 @@ class ViewController: UIViewController {
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "to-the-list", let destinationViewController = segue.destination as? ListViewController {
-      destinationViewController.deck = deck
+
+    if segue.identifier == "to-the-list",
+       let dvc = segue.destination as? ListViewController {
+
+      dvc.deck = deck
+
+//      segue.destination.deck
+
     } else if let destinationViewController = segue.destination as? AnimatedViewController {
+
       destinationViewController.flashcard = flashcard
+
+//      segue.destination.flashcard
+
+    } else if segue.destination is AnimatedViewController {
+
     }
   }
 
