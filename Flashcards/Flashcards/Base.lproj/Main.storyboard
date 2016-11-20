@@ -76,7 +76,7 @@
         <!--List View Controller-->
         <scene sceneID="aPa-QL-OnY">
             <objects>
-                <viewController id="bCS-XB-5Ec" customClass="ListViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="bCS-XB-5Ec" customClass="ListViewController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wOu-KH-viU"/>
                         <viewControllerLayoutGuide type="bottom" id="fUQ-Sz-nMM"/>
@@ -90,10 +90,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="5Oa-Og-PTN">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Oa-Og-PTN" id="1Ix-rb-uh5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -136,18 +136,28 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="pfb-xk-LQE" firstAttribute="centerX" secondItem="KHE-8m-BSo" secondAttribute="centerX" id="5T1-UI-p71"/>
                             <constraint firstItem="pfb-xk-LQE" firstAttribute="top" secondItem="6jA-qP-uRK" secondAttribute="bottom" constant="20" id="Wxa-Ay-lnA"/>
                             <constraint firstItem="pfb-xk-LQE" firstAttribute="leading" secondItem="KHE-8m-BSo" secondAttribute="leading" constant="8" id="zeb-It-3mC"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DZ3-x0-9j8" appends="YES" id="Z8q-ls-6aI"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" badgeValue="3+" systemItem="favorites" id="Iaj-ox-5Jn"/>
                     <connections>
                         <outlet property="definitionLabel" destination="pfb-xk-LQE" id="JD9-Zj-Ps2"/>
+                        <outlet property="topConstraint" destination="Wxa-Ay-lnA" id="1FI-rQ-m7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGr-PF-wm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DZ3-x0-9j8">
+                    <connections>
+                        <action selector="handlePan:" destination="cUK-y4-JrU" id="guo-Xh-uqo"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3010" y="-689"/>
         </scene>
