@@ -10,50 +10,27 @@ import UIKit
 
 class AnimatedViewController: UIViewController {
 
+  @IBOutlet weak var definitionLabel: UILabel!
+  // @IBOutlet weak var topConstraint
+
+  var flashcard: Flashcard?
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Do any additional setup after loading the view.
+    definitionLabel.text = nil
   }
 
-  @IBAction func buttonTap(sender: UIButton) {
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
 
-    UIView.animate(withDuration: 1) {
-      sender.center = CGPoint(x: 50, y: 50)
-      sender.transform = CGAffineTransform(scaleX: 5.5, y: 5.5)
-
-      self.view.backgroundColor = .white
-    }
-
-    UIView.animate(withDuration: 1, delay: 2,
-                   options: [.curveEaseIn, .autoreverse],
-                   animations: {
-//      sender.transform = CGAffineTransform(scaleX: 1, y: 1)\\
-
-
-//                    let t = CATransform3DIdentity
-                    sender.layer.transform = CATransform3DMakeRotation(20, 0, 1, 0)
-
-                    sender.center = CGPoint(x: 50, y: 600)
-    }, completion: nil)
-
-
-//    UIView.animateKeyframes(withDuration: 1, delay: 3, options: [], animations: {
-//      UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: {
-//        sender.center.x = 250
-//      })
-//
-//      UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.2, animations: {
-//        sender.center.x = 50
-//      })
-//    }, completion: nil)
-
-
-
-    
-
-
-
+    UIView.transition(with: definitionLabel,
+                      duration: 0.3, 
+                      options: [.curveEaseOut, .transitionFlipFromBottom],
+                      animations: {
+                        self.definitionLabel.text = self.flashcard?.definition
+                      },
+                      completion: nil)
   }
 
 }

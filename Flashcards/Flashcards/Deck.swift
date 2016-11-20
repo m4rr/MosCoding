@@ -27,7 +27,6 @@ class Deck {
 //    }
 
     cards = cardData.map { Flashcard(term: $0, definition: $1) }
-
   }
 
   func randomCard() -> Optional<Flashcard> { // -> Flashcard?
@@ -46,14 +45,16 @@ class Deck {
     }
   }
 
+  var numberOfCards: Int {
+    return cards.count
+  }
+
+  func card(number: Int) -> Flashcard? {
+    if number < numberOfCards {
+      return cards[number]
+    }
+
+    return nil
+  }
 
 }
-
-
-
-
-
-
-
-
-

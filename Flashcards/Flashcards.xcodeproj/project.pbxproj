@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0310A8E91DE1921200CF958D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310A8E81DE1921200CF958D /* ListViewController.swift */; };
 		035DDC431DE07FAF006213FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DDC421DE07FAF006213FA /* AppDelegate.swift */; };
 		035DDC451DE07FAF006213FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035DDC441DE07FAF006213FA /* ViewController.swift */; };
 		035DDC481DE07FAF006213FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 035DDC461DE07FAF006213FA /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0310A8E81DE1921200CF958D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		035DDC3F1DE07FAF006213FA /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035DDC421DE07FAF006213FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		035DDC441DE07FAF006213FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0310A8E61DE18CFE00CF958D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				035DDC561DE09221006213FA /* Deck.swift */,
+				035DDC541DE08AD7006213FA /* Flashcard.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0310A8E71DE18D0600CF958D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				035DDC441DE07FAF006213FA /* ViewController.swift */,
+				03A3256E1DE0B9A40040CF22 /* AnimatedViewController.swift */,
+				0310A8E81DE1921200CF958D /* ListViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		035DDC361DE07FAF006213FA = {
 			isa = PBXGroup;
 			children = (
@@ -68,14 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				035DDC421DE07FAF006213FA /* AppDelegate.swift */,
-				035DDC441DE07FAF006213FA /* ViewController.swift */,
-				035DDC541DE08AD7006213FA /* Flashcard.swift */,
+				0310A8E71DE18D0600CF958D /* ViewController */,
+				0310A8E61DE18CFE00CF958D /* Model */,
 				035DDC461DE07FAF006213FA /* Main.storyboard */,
-				03A3256E1DE0B9A40040CF22 /* AnimatedViewController.swift */,
 				035DDC491DE07FAF006213FA /* Assets.xcassets */,
 				035DDC4B1DE07FAF006213FA /* LaunchScreen.storyboard */,
 				035DDC4E1DE07FAF006213FA /* Info.plist */,
-				035DDC561DE09221006213FA /* Deck.swift */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -223,6 +242,7 @@
 			files = (
 				035DDC571DE09221006213FA /* Deck.swift in Sources */,
 				035DDC551DE08AD7006213FA /* Flashcard.swift in Sources */,
+				0310A8E91DE1921200CF958D /* ListViewController.swift in Sources */,
 				03A3256F1DE0B9A40040CF22 /* AnimatedViewController.swift in Sources */,
 				035DDC451DE07FAF006213FA /* ViewController.swift in Sources */,
 				035DDC431DE07FAF006213FA /* AppDelegate.swift in Sources */,
